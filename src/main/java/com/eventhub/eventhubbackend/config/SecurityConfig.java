@@ -47,11 +47,10 @@ public class SecurityConfig {
         CorsConfiguration configuration =
                 new CorsConfiguration();
 
-        configuration.setAllowedOrigins(
+        configuration.setAllowedOriginPatterns(
                 List.of(
                         "http://localhost:4200",
-                        "https://eventhub-frontend-sand.vercel.app",
-                        "https://eventhub-frontend-git-main-kaarthik-rajasekaran4.vercel.app"
+                        "https://*.vercel.app"
                 )
         );
 
